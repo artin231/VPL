@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='physics/sim3/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+<div class="box">
+    <p>f: {{f}}</p>
+    <hr>
+    <p>d : {{d}}</p>
+    <hr>
+    <p>theta: {{theta}}</p>
+    <hr>
+    <p>ρ = {{wf}}</p>
+    <button type="submit" onclick="location.href='/use_AI_for_physics/sim3'" >back</button>
+</div>
+</center>
+</body>
+
+</html>

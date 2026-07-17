@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='physics/sim4/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="box" action="/use_AI_for_physics/sim4/result" method="post">
+            <center>
+                <h1>انرژی پتانسیل گرانشی یک جسم</h1>
+            </center>
+            <div class="inp">
+                <input name="m" type="number" placeholder="M : " required>
+                <input name="g" type="number" placeholder="G : " required>
+                <input name="h" type="number" placeholder="H : " required>
+            </div>
+            <input type="submit" href="/use_AI_for_physics/sim4/result">
+        </form>
+
+    </div>
+</body>
+
+</html>

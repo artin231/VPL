@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='physics/sim1/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <div id="sidebar">
+            <h3>طراحی آزمایش</h3>
+
+            ارتفاع اولیه
+            <input type="number" id="y0" value="12" step="1">
+            سرعت اولیه
+            <input type="number" id="speed" value="1" step="0.1">
+
+            زاویه پرتاب
+            <input type="number" id="angle" value="1" step="0.1">
+
+            مقاومت هوا
+            <input type="number" id="resistance" value="0" step="0.1">
+
+            زمان شبیه سازی
+            <input type="number" id="time" value="5" step="0.1">
+
+            <button onclick="updateDashboard()">اجرای شبیه سازی</button>
+        </div>
+
+
+
+        <div id="plots">
+            <div id="plot1" class="plot"></div>
+            <div id="plot2" class="plot"></div>
+            <div id="plot3" class="plot"></div>
+            <div id="plot4" class="plot"></div>
+        </div>
+    </section>
+        <script>
+    
+          function updateDashboard() {
+
+            fetch("/api/sim1", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    y0: document.getElementById("y0").value,
+                    speed: document.getElementById("speed").value,
+                    angle: document.getElementById("angle").value,
+                    resistance: document.getElementById("resistance").value,
+                    time: document.getElementById("time").value
+                })
+            })
+                .then(res => res.json())
+                .then(data => {
+
+                    const x = data.x;
+                    const signals = data.signals;
+                    const names = Object.keys(signals);
+
+                    Plotly.react("plot1", [{
+                        x: x,
+                        y: signals[names[0]],
+                        mode: "lines",
+                        name: names[0]
+                    }], { title: names[0] });
+
+                    Plotly.react("plot2", [{
+                        x: x,
+                        y: signals[names[1]],
+                        mode: "lines",
+                        name: names[1]
+                    }], { title: names[1] });
+
+                    Plotly.react("plot3", [{
+                        x: x,
+                        y: signals[names[2]],
+                        mode: "lines",
+                        name: names[2]
+                    }], { title: names[2] });
+
+                    Plotly.react("plot4", [{
+                        x: x,
+                        y: signals[names[3]],
+                        mode: "lines",
+                        name: names[3]
+                    }], { title: names[3] });
+
+                });
+        }
+
+        updateDashboard();
+        </script>
+    </div>
+</body>
+
+</html>

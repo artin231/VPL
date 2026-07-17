@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='us/us.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+                <li><a href="/about-us">سازندگان</a></li>
+                <li><a href="/call-us">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="tarikh">
+            <h1>آزمایشگاه مجازی فیزیک</h1>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="ert">
+            <form action="/ertebat-submit", method="post">
+                <center>
+                    <h1>ثبت پیام</h1><img class="umg" src="./static/img/22222.png" alt="">
+                </center>
+                <div class="place-name">
+                    <input class="name" type="text" name="user_name" placeholder="name" required>
+                    <br><br>
+                    <input class="name" type="text" name="lastname" placeholder="lastname" required>
+                    <br>
+                    <br>
+                    <input class="message" type="text" name="message" placeholder="message" required>
+                </div>
+                <div class="se">
+                    <input class="submit" type="submit" href="/ertebat-submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

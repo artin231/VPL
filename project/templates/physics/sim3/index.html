@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='physics/sim3/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/use_AI_for_physics/sim3/result" method="post">
+        <center>
+        <h1>آزمایش کار در فیزیک</h1>
+        </center>
+        <div class="input_place">
+        <input name="f" type="number" placeholder="F :" required>
+        <input name="d" type="number" placeholder="D :" required>
+        <input name="theta" type="number" placeholder="θ :" required>
+        </div>
+        <input type="submit" href="/use_AI_for_physics/sim3/result">
+    </form>
+</body>
+
+</html>

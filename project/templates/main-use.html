@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='main-use.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+                <li><a href="/about-us">سازندگان</a></li>
+                <li><a href="/call-us">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="tarikh">
+            <h1>آزمایشگاه مجازی فیزیک</h1>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box" id="box1" onclick="location.href='/use_AI_for_physics/sim1'">
+            <img src="{{ url_for('static' , filename='images/projectile-motion.webp') }}" alt="">
+            <center>
+                <h1>پرتابه</h1>
+            </center>
+        </div>
+        <div class="box" id="box2" onclick="location.href='/use_AI_for_physics/sim2'">
+            <img src="{{ url_for('static' , filename='images/GettyImages-523572366-5830a8713df78c6f6a8cb9df.jpg') }}" alt="">
+            <center>
+                <h1>سقوط آزاد</h1>
+            </center>
+        </div>
+        <div class="box" id="box3" onclick="location.href='/use_AI_for_physics/sim4'">
+            <img src="{{ url_for('static' , filename='images/677b0796008fdf8be8163faebb512ad5.webp') }}" alt="">
+            <center>
+                <h1>انرژی پتانسیل گرانشی</h1>
+            </center>
+        </div>
+        <div class="box" id="box4" onclick="location.href='/use_AI_for_physics/sim3'">
+            <img src="{{ url_for('static' , filename='images/تعریف-کار-در-فیزیک.jpg') }}" alt="">
+            <center>
+                <h1>کار یک جسم</h1>
+            </center>
+        </div>
+    </div>
+    <script src="{{ url_for('static' , filename='physics/js/script.js') }}"></script>
+</body>
+
+</html>

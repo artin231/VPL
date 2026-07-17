@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../fonts/Vazirmatn-Medium.ttf);
+}
+
+* {
+    transition: all linear 200ms;
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(247, 247, 247);
+    background-size: cover;
+    height: 100vh;
+    font-family: "vazir";
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    gap: 15%;
+}
+
+nav {
+    height: 100%;
+    padding: 15px 70px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.header ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    height: 100%;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.tarikh {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    padding: 12px 0px;
+
+}
+
+.tarikh h1 {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    font-size: 2vw;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    gap: 5%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.container .box {
+    width: 800px;
+    background-color: rgb(247, 247, 247);
+    height: 600px;
+    border-radius: 30px;
+
+    text-align: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.377);
+
+}
+
+.container .box:hover {
+    box-shadow: 1px 1px 10px black;
+    transition: linear 200ms;
+}
+
+.container .box img {
+    width: 100%;
+    height: 80%;
+   border-top-right-radius: 28px;
+        border-top-left-radius: 28px;
+}
+
+.container .box h1 {
+    font-size: 30px;
+    justify-self: center;
+}
+
+.container .ert {
+    text-align: center;
+    justify-items: center;
+    height: 60vh;
+    max-width: 100%;
+    text-align: center;
+}
+
+.container .ert form {
+    width: 480px;
+    height: 500px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.634);
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 5;
+    box-sizing: border-box;
+}
+
+
+
+
+.container .ert form .place-name .name {
+    width: 90%;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(247, 247, 247);
+    border: 2px solid black;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.container .ert form .place-name .message {
+    height: 100px;
+    width: 90%;
+    background-color: rgb(247, 247, 247);
+        border: 2px solid black;
+
+    outline: 0;
+        border-radius: 10px;
+
+
+}
+
+.container .ert form .se input {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+@media (max-width:370px) {
+    .container .ert form {
+        width: 280px;
+        height: 400px;
+    }
+    .container {
+        flex-flow: column;
+    }
+
+    .container .box {
+        width: 320px !important;
+        height: 320px !important;
+    }
+
+
+    a {
+        font-size: 10px;
+        display: block;
+        width: 200%;
+    }
+
+    li {
+        margin: 3%;
+    }
+
+    .tarikh h1 {
+        color: rgb(0, 0, 0);
+        margin-top: 5%;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.89vw;
+    }
+
+    nav {
+        padding: 3%;
+    }
+
+}
+
+
+
+@media (min-width:370px) and (max-width:480px) {
+    .container .ert form {
+        width: 280px;
+        height: 400px;
+    }
+    .container .box {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
+    a {
+        margin: auto;
+        text-decoration: none;
+
+        font-size: 10px;
+        display: block;
+        width: 200%;
+    }
+
+    li {
+        margin: 3%;
+    }
+
+    .tarikh h1 {
+        color: rgb(1, 1, 1);
+        margin-top: 5%;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.89vw;
+    }
+
+    nav {
+        padding: 3%;
+    }
+}
+
+@media (min-width:480px) and (max-width: 630px) {
+    .container .box {
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    a {
+        font-size: 15px;
+        display: block;
+        width: 200%;
+    }
+
+    li {
+        margin: 3%;
+    }
+
+    .tarikh h1 {
+        color: rgb(0, 0, 0);
+        margin-top: 5%;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.89vw;
+    }
+
+}
+
+@media (min-width:630px) and (max-width: 800px) {
+    .container .box {
+        width: 500px;
+        height: 500px;
+        flex-shrink: 0;
+    }
+    .container .box {
+        width: 60%;
+        height: 70%;
+    }
+
+    a {
+        font-size: 15px;
+        width: 150%;
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .container .box {
+        width: 500px;
+        height: 500px;
+        flex-shrink: 0;
+    }
+    body{
+        height: 100% !important;
+    }
+    .container {
+
+        margin-bottom: 5% !important;
+        height: 100%;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='form/form.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static' , filename='images/logo2.png') }}">
+    <title>آزمایشگاه مجازی فیزیک</title></head>
+<body>
+    <div class="container">
+        <form action="/submit" method="POST">
+            <center>
+                <h1>فرم ثبت نام</h1>
+            </center>
+
+            <div class="s">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="password">
+            </div>
+
+            <div class="a">
+                <input type="submit" href="/submit-voorood" class="submit">
+                <br>
+                <br>
+                <a href="/login">ثبت نام نکرده ام</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

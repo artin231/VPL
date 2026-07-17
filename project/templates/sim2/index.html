@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>شبیه ساز سقوط آزاد</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="sidebar">
+    <h3>طراحی آزمایش</h3>
+
+    سرعت اولیه
+    <input type="number" id="speed" value="8" step="1">
+
+    ارتفاع اولیه
+    <input type="number" id="y0" value="12" step="1">
+
+    مقاومت هوا
+    <input type="number" id="resistance" value="0" step="0.1">
+
+    
+    زمان شبیه سازی
+    <input type="number" id="time" value="5" step="0.1">
+
+
+    <button onclick="updateDashboard()">اجرای شبیه سازی</button>
+</div>
+
+<div id="plots">
+    <div id="plot1" class="plot"></div>
+    <div id="plot2" class="plot"></div>
+    <div id="plot3" class="plot"></div>
+    <div id="plot4" class="plot"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

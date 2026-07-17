@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../../fonts/Vazirmatn-Medium.ttf);
+}
+
+body {
+    background-image: url('../../images/360_F_871018122_1GEVDfeRFvVoDbX1Ob9i8mbrBS8Y0hqF.jpg');
+    background-size: cover;
+    height: 100vh;
+    font-family: "vazir";
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .box {
+    width: 350px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.859);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.container .box h1 {
+    font-size: 20px;
+}
+
+.container .box .inp {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .box .inp input {
+    width: 90%;
+    background-color: aliceblue;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    width: 30%;
+    height: 10%;
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.box {
+    width: 400px;
+    height: 450px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.384);
+    padding: 2%;
+
+    box-sizing: border-box;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+}
+
+button {
+    width: 30%;
+    height: 7%;
+    border-radius: 15px;
+    background-color: #BBDEFB;
+    border: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.695);
+    cursor: pointer;
+    margin: auto;
+}
+
+.box p {
+    font-size: 25px;
+    overflow-x: auto;
+    box-sizing: border-box;
+
+}
+
+.e {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(width:450px){
+    .box{
+        width:100%;
+    }
+}

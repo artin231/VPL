@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='physics/sim4/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <center class="e">
+        <div class="box" style="overflow-x: auto;">
+            <p>m: {{m}}</p>
+            <hr>
+            <p>g : {{g}}</p>
+            <hr>
+            <p>h: {{h}}</p>
+            <hr>
+            <p>wg = {{wg}}</p>
+            <button type="submit" onclick="location.href='/use_AI_for_physics/sim4'">back</button>
+        </div>
+    </center>
+</body>
+
+</html>

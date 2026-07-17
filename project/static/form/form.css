@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../fonts/Vazirmatn-Medium.ttf);
+    font-weight: lighter;
+}
+
+body {
+    background-image: url('../images/volume-abstract-graphic-loneliness-desk_1258-258.avif');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: 'vazir';
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+}
+
+form {
+    min-width: 500px;
+    max-width: 550px;
+    height: 450px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.421);
+    margin: auto;
+}
+
+.se {
+    min-width: 500px;
+    max-width: 550px;
+    height: 350px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.421);
+    margin: auto;
+}
+
+.s {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 50%;
+    width: 100%;
+}
+
+.s input {
+    height: 40px;
+    font-size: 20px;
+    background-color: aliceblue;
+    border: 0px;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    background-color: transparent;
+}
+
+.s input:hover {
+    outline: none;
+}
+
+.s input:focus {
+    outline: none;
+    border-bottom: 3px solid blue;
+    background-color: transparent;
+}
+
+.a {
+    height: 50%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.a .submit {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0097a7;
+    cursor: pointer;
+    margin: auto;
+    width: 60%;
+    border: 0;
+    color: aliceblue;
+}
+
+@media (max-width:370px) {
+form {
+    min-width: 300px;
+    height: 400px;
+}
+}
+
+@media (min-width:370px) and (max-width:480px) {
+form {
+    min-width: 350px;
+    height: 400px;
+}
+}
+
+@media (min-width:480px) and (max-width: 630px) {
+form {
+    min-width: 400px;
+    height: 400px;
+}
+}
+
+@media (min-width:630px) and (max-width: 800px) {
+
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+
+
+}

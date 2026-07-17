@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='us/us.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+                <li><a href="/about-us">سازندگان</a></li>
+                <li><a href="/call-us">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="tarikh">
+            <h1>آزمایشگاه مجازی فیزیک</h1>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box" id="box1">
+            <img src="{{ url_for('static' , filename='images/گل-رز-و-عکس.jpg') }}" alt="">
+            <br>
+            <h1>امیرعلی مصلح</h1>
+        </div>
+        <div class="box" id="box2">
+            <img src="{{ url_for('static' , filename='images/white-flower3.jpg') }}" alt="">
+            <br>
+            <h1>آرتین جاهدجاه</h1>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
