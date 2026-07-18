@@ -37,3 +37,6 @@ pip install -r requirements.txt
 set FLASK_APP=app.py
 flask run --debug
 ```
+---
+# a picture of this project:
+<img src="./pics/Screenshot From 2026-07-18 00-07-02.png">
