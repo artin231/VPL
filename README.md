@@ -10,14 +10,29 @@
 
 <h1>how to run:</h1>
 <h3>in windows:</h3>
-```
-in cmd:
 
+# How to run this project
+## 🪟 For Windows in cmd
+```
 git clone https://github.com/artin231/VPL.git
 cd VPL
 cd project
-python -m venv venv 
+python -m venv venv
 venv\Scripts\activate
+pip install -r requirements.txt
+set FLASK_APP=app.py
+flask run --debug
+```
+
+---
+
+## 🐧 For Gnu/Linux in bash
+```
+git clone https://github.com/artin231/VPL.git
+cd VPL
+cd project
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 set FLASK_APP=app.py
 flask run --debug
