@@ -12,10 +12,13 @@
 <h3>in windows:</h3>
 
 # How to run this project
+## first download the project
+<a href="https://github.com/artin231/VPL/releases/download/FlaskVersion/VPL_FlaskVersion.zip">click to download</a>
+### then extract it 
+
 ## 🪟 For Windows in cmd
 ```
-git clone https://github.com/artin231/VPL.git
-cd VPL
+cd VPL_FlaskVersion
 cd project
 python -m venv venv
 venv\Scripts\activate
@@ -28,8 +31,7 @@ flask run --debug
 
 ## 🐧 For Gnu/Linux in bash
 ```
-git clone https://github.com/artin231/VPL.git
-cd VPL
+cd VPL_FlaskVersion
 cd project
 python3 -m venv venv
 source venv/bin/activate
