@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+آزمایش ها 
+{% endblock %}
+
+{% block main %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+                <li><a href="/about-us">سازندگان</a></li>
+                <li><a href="/call-us">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <div class="tarikh">
+            <h1>آزمایشگاه مجازی فیزیک</h1>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box" id="box1" onclick="location.href='/use_AI_for_physics/sim1'">
+            <img src="" alt="">
+            <center>
+                <h1>پرتابه</h1>
+            </center>
+        </div>
+        <div class="box" id="box2" onclick="location.href='/use_AI_for_physics/sim2'">
+            <img src="" alt="">
+            <center>
+                <h1>سقوط آزاد</h1>
+            </center>
+        </div>
+        <div class="box" id="box3" onclick="location.href='/use_AI_for_physics/sim4'">
+            <img src="" alt="">
+            <center>
+                <h1>انرژی پتانسیل گرانشی</h1>
+            </center>
+        </div>
+        <div class="box" id="box4" onclick="location.href='/use_AI_for_physics/sim3'">
+            <img src="" alt="">
+            <center>
+                <h1>کار یک جسم</h1>
+            </center>
+        </div>
+    </div>
+    <script src=""></script>
+</body>
+
+</html>
+{% endblock %}
