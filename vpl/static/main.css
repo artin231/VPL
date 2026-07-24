@@ -38,19 +38,38 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
 }
 
 header nav ul {
     display: flex;
     gap: 3%;
-    width: 100%;
+    width: 70%;
     height: 100%;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 5%;
+    padding-right: 2%;
 }
 
 header nav ul li a{
     font-size: 20px;
     color:black ;
+}
+
+header nav .left{
+    display: flex;
+    gap: 3%;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1%;
+}
+
+header nav .left img{
+    width: 80px;
+}
+
+header nav .left p{
+    font-size: 20px;
 }
